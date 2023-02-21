@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Ejercicios"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "01-HappyFox.Devs-GuiaPractica"
+	}
+}

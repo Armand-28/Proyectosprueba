@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Caveat: "Caveat", cursive;
+  --YanoneKaffeesatz: "Yanone Kaffeesatz", sans-serif;
+  --OpenSans: "Open Sans", sans-serif;
+}
+body {
+  background-image: url(../Imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin-top: 5px;
+}
+header > p {
+  position: absolute;
+  padding: 20px 40px;
+  font-size: 30px;
+  margin: auto;
+  color: orangered;
+  font-family: var(--YanoneKaffeesatz);
+}
+
+header p i {
+  font-size: 20px;
+  color: gray;
+}
+header nav p {
+  font-size: 17px;
+  font-family: var(--YanoneKaffeesatz);
+  font-weight: bold;
+  margin-left: 300px;
+  margin-top: 25px;
+  position: absolute;
+  animation-name: mover;
+  animation-duration: 3s;
+}
+@keyframes mover {
+  0% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(15%);
+  }
+}
+header nav p a {
+  padding-left: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 50px;
+}
+header nav p a:hover {
+  color: orangered;
+  border-top: solid 2px orangered;
+}
+p > input {
+  position: absolute;
+  margin-left: 1040px;
+  margin-top: 1px;
+  border: solid 1px orangered;
+  border-right: none;
+  width: 250px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 3px;
+  color: white;
+  padding-left: 5px;
+  outline: none;
+}
+p input::placeholder {
+  color: white;
+  padding-left: 5px;
+}
+p button {
+  position: absolute;
+  margin-left: 1276px;
+  margin-top: 1px;
+  height: 35.5px;
+  width: 80px;
+  background-color: orangered;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  font-family: var(--YanoneKaffeesatz);
+  font-size: 15px;
+  cursor: pointer;
+}
+section {
+  position: absolute;
+  left: 50px;
+  top: 250px;
+}
+section div {
+  line-height: 60px;
+}
+section div h1 {
+  color: white;
+  font-size: 50px;
+  font-family: var(--Caveat);
+}
+section div h2 {
+  color: rgb(252, 88, 28);
+  font-size: 50px;
+  font-family: var(--Caveat);
+}
+section p {
+  color: white;
+  font-family: var(--YanoneKaffeesatz);
+  margin-top: 10px;
+  line-height: 25px;
+  font-weight: 400px;
+}
+section button {
+  width: 140px;
+  height: 35px;
+  background-color: orangered;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+section button a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: var(--YanoneKaffeesatz);
+  text-transform: uppercase;
+  color: black;
+}
+aside {
+  width: 280px;
+  height: 450px;
+  position: relative;
+  margin-left: 1120px;
+  top: 100px;
+  background-image: url(../Imagenes/formulario.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+aside form div {
+  position: relative;
+  margin: auto;
+  color: white;
+  justify-content: center;
+}
+aside form div h2 {
+  background-color: white;
+  color: orangered;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: var(--OpenSans);
+}
+aside form div p input {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  border: none;
+  border-bottom: 2px solid orangered;
+  width: 240px;
+  height: 40px;
+  padding-top: 0px;
+}
+aside form div div{
+    margin-top: 20px;
+}
+aside form div div button{
+    position: relative;
+    margin-left: 25px;
+    width: 230px;
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    }
+    aside form div div button a{
+        text-align: center;
+        color: black;
+        font-family: var(--OpenSans);
+        text-decoration: none;
+        padding-left: -30px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    aside form div div p{
+        font-family: var(--OpenSans);
+        font-size: 18px;
+        margin-left: 49px;
+        margin-top: 10px;
+    }
+    aside form div div p > a{
+        margin-left: 35px ;
+        text-decoration: none;
+        color: orangered;
+    }
+    aside form div div p:last-child{
+        font-size: 14px;
+        margin-left: 90px;
+        color: white;
+    }
+    aside form div p:last-child{
+        color:orangered;
+        display: flex;
+        margin-left: 25px;
+        font-size: 30px;
+    }
+    aside form div p:last-child i{
+        padding-left: 15px;
+    }
+    

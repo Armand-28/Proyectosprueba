@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Caveat: "Caveat", cursive;
+    --YanoneKaffeesatz: "Yanone Kaffeesatz", sans-serif;
+    --OpenSans: "Open Sans", sans-serif;
+  }
+  .imagen{
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Proyecto2/Imagenes2/background.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .logo img{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    margin: 20px 60px;
+  }
+  .nav{
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 900px;
+    margin: auto;
+  }
+  .nav p > a{
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    font-family: var(--Caveat);
+    position: relative;
+    margin: auto;
+    text-transform: uppercase;
+    width: 20px;
+    height: 0;
+    padding-top: 10px;
+  }
+  .nav p {
+    animation-name: mover;
+    animation-duration: 2s;
+  }
+  @keyframes mover{
+    0%{margin-left: -100px;
+    transform: rotate(0deg);}
+    50%{margin-left: 30px;
+    transform: rotate(360deg);}
+  }
+  .nav p a:hover{
+    color: orangered;
+    border-top: solid 2px orangered;
+  }
+  
+  .nav p i{
+    position: absolute;
+    background-color: rgb(174, 174, 174);
+    padding-left: 50px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    padding:0 7px;
+    padding-top: 6px;
+    color: white;
+  }
+  .nav p i:hover{
+    color:orangered ;
+    transform: scale(1.09);
+  }
+  section{
+    position: relative;
+    top: 200px;
+    left: 100px;
+    width: 700px;
+    height: 600px;
+  }
+  section h1{
+    color: white;
+    font-size: 100px;
+    font-family: var(--OpenSans);
+  }
+  section p{
+    color: white;
+    font-size: 14px;
+    font-family: var(--YanoneKaffeesatz);
+    margin-top: 20px;
+    line-height:20px;
+  }
+  section button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+  }
+  section button:hover{
+    transform: scaleX(1.1);
+    cursor: pointer;
+    background-color: rgba(255, 68, 0, 0.545);
+  }
+  section button a{
+    color: black;
+    text-decoration: none;
+    font-family: var(--YanoneKaffeesatz);
+    font-weight: bold;
+  }
+.cuadros{
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  grid-gap: 25px;
+  margin: auto;
+  position: relative;
+  margin-left: 800px;
+  margin-top: -530px;
+}
+.cuadros div{
+  position: relative;
+  overflow: hidden;
+  max-width: 290px;
+  max-height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+  animation-name: cuadros;
+  animation-duration: 3s;
+}
+@keyframes cuadros{
+  0%{
+    margin-bottom: -50px;
+    transform: rotateY(0deg);
+    }
+  70%{
+    margin-bottom: 50px ;
+    transform: rotateY(180deg);
+    }
+  }
+
+.cuadros div img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  
+}
+.cuadros div .parrafos {
+  position: absolute;
+  top: 0px;
+  font-size: 12px;
+  display: block;
+  justify-content: center;
+  text-align: justify;
+  padding-top: 20px;
+  color: white;
+  font-family: var(--Caveat);
+  margin-top: 15px;
+  margin-left: 20px;
+}
+h6{
+position: absolute;
+font-size: 16px;
+top: 0px;
+}
+.parrafos > p{
+  position: relative;
+  font-size: 12px;
+}
+

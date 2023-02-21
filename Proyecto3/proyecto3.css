@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+    --Caveat: "Caveat", cursive;
+    --YanoneKaffeesatz: "Yanone Kaffeesatz", sans-serif;
+    --OpenSans: "Open Sans", sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    width: 100%;
+    height: 80px;  
+    color: white;
+    position: relative;
+    margin: auto;
+}
+header p {
+    font-size: 25px;
+    font-family: var(--YanoneKaffeesatz);
+    color: red;
+    padding: 20px 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    top: -40px;
+    right: 50px;
+
+}
+nav li > a {
+    position: relative;
+    text-decoration: none;
+    margin-left: 25px;
+    color: gray;
+    font-family: var(--OpenSans);
+    font-size: 13px;
+}
+nav li > a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 7px;
+}
+section{
+    background-image: url(../Proyecto3/Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    filter: brightness(0.9);
+}
+section div{
+    position: absolute;
+    margin-top: 230px;
+    left: 60px;
+    color: white;
+}
+section div h1{
+    position: relative;
+    font-size: 40px;
+    padding: 10px 0 20px;
+    font-family: var(--OpenSans);
+    letter-spacing: 1.5px;
+}
+section div p{
+    font-size: 13px;
+    font-family: var(--OpenSans);
+    line-height: 19px;
+    padding: 10px 0 20px;
+}
+section div button{
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 4px; ;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer ;
+    color: white;
+    text-shadow: 2px 2px 10px white;
+    font-size: 14px;
+}
+section div button i{
+    margin-right: 20px;
+}
+section div button:hover{
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 700px){
+    header p{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    nav{
+        text-align: center;
+        flex-direction: row;
+        margin-left: -10px;
+    }
+    div{
+        font-size: 10px ;
+    }
+    
+
+}
+
+
+
+
